@@ -8,26 +8,26 @@
 </head>
 <body>
     <!--Comment here-->
+    <nav class="sidebar">
+            <form>
+                <div onclick="toggleMenu('options')">Options</div>
+                <input class="maxwidth options hidden"id="idfield" placeholder="enter ID">
+                <input class="maxwidth options hidden" value="Get single user" type="button" onclick="fetchSingleUser()">
+                <input class="maxwidth options hidden" value="Get All users" type="button" onclick="fetchAll()">
+                <input class="maxwidth options hidden" value="Delete user" type="button" onclick="deleteUser()">
+                <label onclick="toggleMenu('create')">Update/Create User</label>
+                <input class="maxwidth create hidden" id="id" placeholder="enter id (no id if creating)">
+                <input class="maxwidth input create hidden" id="username" placeholder="enter username">
+                <input class="maxwidth input create hidden" id="email" placeholder="enter email">
+                <input class="maxwidth input create hidden" id="password" placeholder="enter password">
+                <input class="maxwidth create hidden" type="button" value="Update" onclick="updateUser()">
+                <input class="maxwidth create hidden" type="button" value="Create" onclick="createUser()">
+                </form>
+        </nav>
+
+
     <div id="main">
     </div>
-    <form>
-        <label>ID</label>
-        <input id="idfield" placeholder="enter ID">
-        <input value="Get single user" type="button" onclick="fetchSingleUser()">
-        <input value="Get All users" type="button" onclick="fetchAll()">
-        <input value="Delete user" type="button" onclick="deleteUser()">
-    </form>
-
-
-    <form>
-        <label>Update/Create User</label>
-        <input id="id" placeholder="enter id (no id if creating)">
-        <input id="username" placeholder="enter username">
-        <input id="email" placeholder="enter email">
-        <input id="password" placeholder="enter password">
-        <input type="button" value="Update" onclick="updateUser()">
-        <input type="button" value="Create" onclick="createUser()">
-    </form>
 
     <script src="script/main.js"></script>
 </body>

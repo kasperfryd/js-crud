@@ -1,8 +1,9 @@
 *{
     box-sizing: border-box;
-    margin: 8px;
-    padding: 8px;
+    //margin: 8px;
+    //padding: 8px 0 8px 0;
     font-size: 1vw;
+    //border: solid 1px black;
 }
 
 input{
@@ -11,4 +12,33 @@ input{
 
 label{
     display: block;
+}
+
+.griditem{
+    display:grid;
+    width: 100%;
+    height:auto;
+    border-bottom: solid 1px black;
+}
+
+.sidebar{
+    display:inline-grid;
+    width: 15vw;
+    position: sticky;
+    height: 90vh;
+    grid-template-rows: max-content;
+}
+
+.hidden{
+    display:none;
+}
+
+.maxwidth{
+    width: 100%;
+}
+
+#main{
+    display: inline-grid;
+    grid-template-columns: 0.5fr 1fr 1.5fr 1fr;
+    width: 82.5%;
 }
