@@ -1,0 +1,16 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 8px;
+  padding: 8px;
+  font-size: 1.1vw;
+}
+
+input {
+  display: inline-block;
+}
+
+label {
+  display: block;
+}
+/*# sourceMappingURL=main.css.map */
